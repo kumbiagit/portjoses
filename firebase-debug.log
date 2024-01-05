@@ -1,0 +1,116 @@
+[debug] [2024-01-05T02:42:20.386Z] ----------------------------------------------------------------------
+[debug] [2024-01-05T02:42:20.389Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JOSE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-05T02:42:20.389Z] CLI Version:   13.0.2
+[debug] [2024-01-05T02:42:20.389Z] Platform:      win32
+[debug] [2024-01-05T02:42:20.390Z] Node Version:  v21.5.0
+[debug] [2024-01-05T02:42:20.390Z] Time:          Thu Jan 04 2024 21:42:20 GMT-0500 (Ecuador Time)
+[debug] [2024-01-05T02:42:20.390Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-05T02:42:20.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-05T02:42:20.399Z] > authorizing via signed-in user (jserrano2552@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\JOSE\Desktop\joses
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-05T02:43:06.840Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-01-05T02:43:06.841Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"losjoses","name":"losjoses"}
+[debug] [2024-01-05T02:43:07.599Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-01-05T02:43:07.599Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5445321209558431523"}
+[debug] [2024-01-05T02:43:07.600Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 [none]
+[debug] [2024-01-05T02:43:08.134Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 200
+[debug] [2024-01-05T02:43:08.134Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 {"name":"operations/cp.5445321209558431523"}
+[debug] [2024-01-05T02:43:08.644Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:08.644Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 [none]
+[debug] [2024-01-05T02:43:08.930Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 200
+[debug] [2024-01-05T02:43:08.930Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 {"name":"operations/cp.5445321209558431523"}
+[debug] [2024-01-05T02:43:09.934Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:09.934Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 [none]
+[debug] [2024-01-05T02:43:10.221Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 200
+[debug] [2024-01-05T02:43:10.222Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 {"name":"operations/cp.5445321209558431523","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-01-05T02:43:12.227Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:12.227Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 [none]
+[debug] [2024-01-05T02:43:12.529Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 200
+[debug] [2024-01-05T02:43:12.530Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5445321209558431523 {"name":"operations/cp.5445321209558431523","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"335740179361","projectId":"losjoses","lifecycleState":"ACTIVE","name":"losjoses","createTime":"2024-01-05T02:43:14.715Z"}}
+[debug] [2024-01-05T02:43:12.531Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/losjoses:addFirebase [none]
+[debug] [2024-01-05T02:43:15.179Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/losjoses:addFirebase 200
+[debug] [2024-01-05T02:43:15.179Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/losjoses:addFirebase {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:15.180Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:15.614Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:15.614Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:16.127Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:16.128Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:16.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:16.612Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:17.616Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:17.617Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:17.952Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:17.952Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:19.953Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:19.954Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:20.196Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:20.196Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:24.196Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:24.197Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:24.552Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:24.552Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3"}
+[debug] [2024-01-05T02:43:32.563Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-05T02:43:32.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 [none]
+[debug] [2024-01-05T02:43:33.045Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 200
+[debug] [2024-01-05T02:43:33.045Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3 {"name":"operations/workflows/NmQ0NzY2Y2ItMWQ0NC00YjMzLWE5OTYtNmYwOTZkZjI0M2M3","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"losjoses","projectNumber":"335740179361","displayName":"losjoses","name":"projects/losjoses","resources":{"hostingSite":"losjoses"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: losjoses
+[info]    - Project Name: losjoses
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/losjoses/overview
+[info] i  Using project losjoses (losjoses) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-05T02:43:33.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/losjoses [none]
+[debug] [2024-01-05T02:43:33.520Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/losjoses 200
+[debug] [2024-01-05T02:43:33.520Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/losjoses {"projectId":"losjoses","projectNumber":"335740179361","displayName":"losjoses","name":"projects/losjoses","resources":{"hostingSite":"losjoses"},"state":"ACTIVE","etag":"1_7af83077-83dc-489e-9926-f9bdc82e6765"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-01-05T02:47:39.592Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-01-05T02:47:40.118Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-01-05T02:47:40.118Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] +  Wrote joses/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\JOSE\Desktop\joses is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=782532135&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-05T02:47:52.330Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-05T02:47:52.331Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-05T02:47:52.684Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-05T02:47:52.684Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-05T02:47:52.688Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-05T02:47:53.037Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-05T02:47:53.037Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kumbiagit","id":94969583,"node_id":"U_kgDOBake7w","avatar_url":"https://avatars.githubusercontent.com/u/94969583?v=4","gravatar_id":"","url":"https://api.github.com/users/kumbiagit","html_url":"https://github.com/kumbiagit","followers_url":"https://api.github.com/users/kumbiagit/followers","following_url":"https://api.github.com/users/kumbiagit/following{/other_user}","gists_url":"https://api.github.com/users/kumbiagit/gists{/gist_id}","starred_url":"https://api.github.com/users/kumbiagit/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kumbiagit/subscriptions","organizations_url":"https://api.github.com/users/kumbiagit/orgs","repos_url":"https://api.github.com/users/kumbiagit/repos","events_url":"https://api.github.com/users/kumbiagit/events{/privacy}","received_events_url":"https://api.github.com/users/kumbiagit/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2021-11-24T12:10:49Z","updated_at":"2024-01-04T21:59:24Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":164340,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as kumbiagit 
+[info] 
