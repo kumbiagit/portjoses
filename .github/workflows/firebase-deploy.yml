@@ -22,13 +22,12 @@ jobs:
 
     - name: Authenticate Firebase CLI with Service Account
       env:
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
       run: |
-        echo "$GOOGLE_APPLICATION_CREDENTIALS" | base64 --decode > ./gcp-sa-key.json
-        firebase use --add --token "$FIREBASE_TOKEN" # Use the Firebase token if you're not using a service account
-        firebase functions:config:set google_application_credentials=./gcp-sa-key.json # This step is usually not necessary for Firebase Hosting, but can be used for Firebase Functions
+        echo "$GCP_SA_KEY" | base64 --decode > gcp-sa-key.json
+        gcloud auth activate-service-account --key-file=gcp-sa-key.json
 
     - name: Deploy to Firebase
-      run: firebase deploy --only hosting --project losjoses --token "$FIREBASE_TOKEN"
+      run: firebase deploy --only hosting --project losjoses
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        GOOGLE_APPLICATION_CREDENTIALS: gcp-sa-key.json
