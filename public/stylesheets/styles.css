@@ -1,6 +1,6 @@
 body {
     background: #FFF;
-    color: #000;
+    color: #555555;
     margin: 0px;
     overflow: hidden;
 }
@@ -24,7 +24,7 @@ a {
 a,
 a:visited,
 a:hover {
-    color: #000;
+    color: #555555;
 }
 
 /* ------------ wrappers --------------- */
@@ -47,8 +47,11 @@ a:hover {
 }
 
 #content a {
-    text-decoration: none;
-    color: #555555;
+    text-decoration: ;
+}
+
+.highlight {
+    color: #000;
 }
 
 #content a:hover,
